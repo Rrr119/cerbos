@@ -1,0 +1,27 @@
+description: Auto-generated impact tests covering every branch of the policy diff.
+name: Impact_03_effect_flip_allow_to_deny
+principals:
+  p001_role_manager:
+    id: p001_role_manager
+    roles:
+    - manager
+resources:
+  r001_invoice:
+    id: impact-resource-001
+    kind: invoice
+tests:
+- description: branch=EFFECT_CHANGED|resourcePolicy:invoice:default:|manager-approve|role:manager|invoice|approve||MODIFIED
+    effects=EFFECT_ALLOW -> EFFECT_DENY
+  expected:
+  - actions:
+      approve: EFFECT_DENY
+    principal: p001_role_manager
+    resource: r001_invoice
+  input:
+    actions:
+    - approve
+    principals:
+    - p001_role_manager
+    resources:
+    - r001_invoice
+  name: impact-001 EFFECT_CHANGED invoice/approve as manager

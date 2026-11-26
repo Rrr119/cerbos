@@ -1,0 +1,10 @@
+---
+apiVersion: api.cerbos.dev/v1
+resourcePolicy:
+  version: default
+  resource: invoice
+  rules:
+    - name: manager-approve
+      actions: ["approve"]
+      effect: EFFECT_DENY
+      roles: ["manager"]

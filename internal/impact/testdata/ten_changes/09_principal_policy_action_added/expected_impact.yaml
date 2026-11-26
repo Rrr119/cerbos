@@ -1,0 +1,14 @@
+name: 09_principal_policy_action_added
+manual_derivation: principal alice gains export on report in her principal policy; the concrete principal cell principal:alice/report/export is impacted.
+affected_principals:
+- principal:alice
+affected_resources:
+- report
+affected_actions:
+- export
+impact_set:
+- principal: principal:alice
+  resource: report
+  action: export
+expected_branch_kinds:
+- ACTION_ADDED

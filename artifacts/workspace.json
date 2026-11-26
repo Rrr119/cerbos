@@ -1,0 +1,17 @@
+{
+  "root": "/home/dev/feedback/uid38824",
+  "B": "/home/dev/feedback/uid38824",
+  "sha": "6f9bf4aa1fe3f290d28e8061edb51701f4b4c515",
+  "wslDistro": "Ubuntu-26.04",
+  "source": {
+    "owner": "cerbos",
+    "repo": "cerbos",
+    "sha": "6f9bf4aa1fe3f290d28e8061edb51701f4b4c515"
+  },
+  "fork": {
+    "owner": "Rrr119",
+    "repo": "cerbos",
+    "cloneUrl": "https://github.com/Rrr119/cerbos.git"
+  },
+  "at": "2026-11-26T03:49:30.151Z"
+}

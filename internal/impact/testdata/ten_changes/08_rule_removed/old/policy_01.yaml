@@ -1,0 +1,14 @@
+---
+apiVersion: api.cerbos.dev/v1
+resourcePolicy:
+  version: default
+  resource: file
+  rules:
+    - name: admin-manage
+      actions: ["read", "write", "delete"]
+      effect: EFFECT_ALLOW
+      roles: ["admin"]
+    - name: contractor-download
+      actions: ["download"]
+      effect: EFFECT_ALLOW
+      roles: ["contractor"]

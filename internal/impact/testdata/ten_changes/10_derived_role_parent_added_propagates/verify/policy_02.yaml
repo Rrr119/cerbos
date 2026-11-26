@@ -1,0 +1,11 @@
+---
+apiVersion: api.cerbos.dev/v1
+resourcePolicy:
+  version: default
+  resource: project
+  importDerivedRoles: ["team_roles"]
+  rules:
+    - name: admin-update
+      actions: ["update"]
+      effect: EFFECT_ALLOW
+      derivedRoles: ["project_admin"]

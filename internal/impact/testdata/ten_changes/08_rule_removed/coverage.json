@@ -1,0 +1,16 @@
+{
+  "branchCount": 1,
+  "coveredCount": 1,
+  "complete": true,
+  "percent": 100,
+  "branches": [
+    {
+      "branchId": "RULE_REMOVED|resourcePolicy:file:default:|contractor-download|role:contractor|file|download||REMOVED",
+      "kind": "RULE_REMOVED",
+      "covered": true,
+      "cases": [
+        "impact-001 RULE_REMOVED file/download as contractor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+description: Auto-generated impact tests covering every branch of the policy diff.
+name: Impact_08_rule_removed
+principals:
+  p001_role_contractor:
+    id: p001_role_contractor
+    roles:
+    - contractor
+resources:
+  r001_file:
+    id: impact-resource-001
+    kind: file
+tests:
+- description: branch=RULE_REMOVED|resourcePolicy:file:default:|contractor-download|role:contractor|file|download||REMOVED
+    effects=EFFECT_ALLOW -> none
+  expected:
+  - actions:
+      download: EFFECT_DENY
+    principal: p001_role_contractor
+    resource: r001_file
+  input:
+    actions:
+    - download
+    principals:
+    - p001_role_contractor
+    resources:
+    - r001_file
+  name: impact-001 RULE_REMOVED file/download as contractor

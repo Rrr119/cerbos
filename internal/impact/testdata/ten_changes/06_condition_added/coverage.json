@@ -1,0 +1,24 @@
+{
+  "branchCount": 2,
+  "coveredCount": 2,
+  "complete": true,
+  "percent": 100,
+  "branches": [
+    {
+      "branchId": "CONDITION_ADDED|resourcePolicy:leave_request:default:|create-request|role:employee|leave_request|create|match|MODIFIED",
+      "kind": "CONDITION_ADDED",
+      "covered": true,
+      "cases": [
+        "impact-001 CONDITION_ADDED leave_request/create as employee"
+      ]
+    },
+    {
+      "branchId": "CONDITION_ADDED|resourcePolicy:leave_request:default:|create-request|role:employee|leave_request|create|no_match|MODIFIED",
+      "kind": "CONDITION_ADDED",
+      "covered": true,
+      "cases": [
+        "impact-002 CONDITION_ADDED leave_request/create as employee"
+      ]
+    }
+  ]
+}

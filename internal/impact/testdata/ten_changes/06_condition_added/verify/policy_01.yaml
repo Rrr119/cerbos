@@ -1,0 +1,13 @@
+---
+apiVersion: api.cerbos.dev/v1
+resourcePolicy:
+  version: default
+  resource: leave_request
+  rules:
+    - name: create-request
+      actions: ["create"]
+      effect: EFFECT_ALLOW
+      roles: ["employee"]
+      condition:
+        match:
+          expr: request.resource.attr.status == "draft"

@@ -1,0 +1,14 @@
+name: 07_rule_added
+manual_derivation: a new viewer comment rule is added to the blog policy; viewer/blog/comment is the only new cell.
+affected_principals:
+- role:viewer
+affected_resources:
+- blog
+affected_actions:
+- comment
+impact_set:
+- principal: role:viewer
+  resource: blog
+  action: comment
+expected_branch_kinds:
+- RULE_ADDED

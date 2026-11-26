@@ -1,0 +1,16 @@
+{
+  "branchCount": 1,
+  "coveredCount": 1,
+  "complete": true,
+  "percent": 100,
+  "branches": [
+    {
+      "branchId": "ROLE_ADDED|resourcePolicy:report:default:|view-report|role:manager|report|view||ADDED",
+      "kind": "ROLE_ADDED",
+      "covered": true,
+      "cases": [
+        "impact-001 ROLE_ADDED report/view as manager"
+      ]
+    }
+  ]
+}

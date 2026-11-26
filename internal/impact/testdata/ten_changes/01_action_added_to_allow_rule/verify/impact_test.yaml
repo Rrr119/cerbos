@@ -1,0 +1,27 @@
+description: Auto-generated impact tests covering every branch of the policy diff.
+name: Impact_01_action_added_to_allow_rule
+principals:
+  p001_role_user:
+    id: p001_role_user
+    roles:
+    - user
+resources:
+  r001_contact:
+    id: impact-resource-001
+    kind: contact
+tests:
+- description: branch=ACTION_ADDED|resourcePolicy:contact:default:|user-access|role:user|contact|create||ADDED
+    effects=none -> EFFECT_ALLOW
+  expected:
+  - actions:
+      create: EFFECT_ALLOW
+    principal: p001_role_user
+    resource: r001_contact
+  input:
+    actions:
+    - create
+    principals:
+    - p001_role_user
+    resources:
+    - r001_contact
+  name: impact-001 ACTION_ADDED contact/create as user

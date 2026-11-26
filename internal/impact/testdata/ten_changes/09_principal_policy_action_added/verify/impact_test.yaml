@@ -1,0 +1,27 @@
+description: Auto-generated impact tests covering every branch of the policy diff.
+name: Impact_09_principal_policy_action_added
+principals:
+  p001_principal_alice:
+    id: alice
+    roles:
+    - impact_principal_subject
+resources:
+  r001_report:
+    id: impact-resource-001
+    kind: report
+tests:
+- description: branch=ACTION_ADDED|principalPolicy:alice:default:|alice-export|principal:alice|report|export||ADDED
+    effects=none -> EFFECT_ALLOW
+  expected:
+  - actions:
+      export: EFFECT_ALLOW
+    principal: p001_principal_alice
+    resource: r001_report
+  input:
+    actions:
+    - export
+    principals:
+    - p001_principal_alice
+    resources:
+    - r001_report
+  name: impact-001 ACTION_ADDED report/export as alice

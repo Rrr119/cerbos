@@ -1,0 +1,7 @@
+---
+apiVersion: api.cerbos.dev/v1
+derivedRoles:
+  name: team_roles
+  definitions:
+    - name: project_admin
+      parentRoles: ["admin", "owner"]

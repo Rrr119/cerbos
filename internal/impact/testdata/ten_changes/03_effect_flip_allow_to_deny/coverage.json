@@ -1,0 +1,16 @@
+{
+  "branchCount": 1,
+  "coveredCount": 1,
+  "complete": true,
+  "percent": 100,
+  "branches": [
+    {
+      "branchId": "EFFECT_CHANGED|resourcePolicy:invoice:default:|manager-approve|role:manager|invoice|approve||MODIFIED",
+      "kind": "EFFECT_CHANGED",
+      "covered": true,
+      "cases": [
+        "impact-001 EFFECT_CHANGED invoice/approve as manager"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "branchCount": 1,
+  "coveredCount": 1,
+  "complete": true,
+  "percent": 100,
+  "branches": [
+    {
+      "branchId": "ACTION_REMOVED|resourcePolicy:document:default:|editor-access|role:editor|document|delete||REMOVED",
+      "kind": "ACTION_REMOVED",
+      "covered": true,
+      "cases": [
+        "impact-001 ACTION_REMOVED document/delete as editor"
+      ]
+    }
+  ]
+}

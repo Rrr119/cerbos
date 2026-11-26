@@ -1,0 +1,14 @@
+name: 03_effect_flip_allow_to_deny
+manual_derivation: the manager approve rule flips ALLOW->DENY; the single cell manager/invoice/approve is impacted.
+affected_principals:
+- role:manager
+affected_resources:
+- invoice
+affected_actions:
+- approve
+impact_set:
+- principal: role:manager
+  resource: invoice
+  action: approve
+expected_branch_kinds:
+- EFFECT_CHANGED

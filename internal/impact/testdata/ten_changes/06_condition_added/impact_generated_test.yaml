@@ -1,0 +1,53 @@
+description: Auto-generated impact tests covering every branch of the policy diff.
+name: Impact_06_condition_added
+principals:
+  p001_role_employee:
+    id: p001_role_employee
+    roles:
+    - employee
+  p002_role_employee:
+    id: p002_role_employee
+    roles:
+    - employee
+resources:
+  r001_leave_request:
+    attr:
+      status: draft
+    id: impact-resource-001
+    kind: leave_request
+  r002_leave_request:
+    attr:
+      status: draft__impact_other
+    id: impact-resource-002
+    kind: leave_request
+tests:
+- description: branch=CONDITION_ADDED|resourcePolicy:leave_request:default:|create-request|role:employee|leave_request|create|match|MODIFIED
+    effects=EFFECT_ALLOW -> EFFECT_ALLOW
+  expected:
+  - actions:
+      create: EFFECT_ALLOW
+    principal: p001_role_employee
+    resource: r001_leave_request
+  input:
+    actions:
+    - create
+    principals:
+    - p001_role_employee
+    resources:
+    - r001_leave_request
+  name: impact-001 CONDITION_ADDED leave_request/create as employee
+- description: branch=CONDITION_ADDED|resourcePolicy:leave_request:default:|create-request|role:employee|leave_request|create|no_match|MODIFIED
+    effects=EFFECT_ALLOW -> EFFECT_ALLOW
+  expected:
+  - actions:
+      create: EFFECT_DENY
+    principal: p002_role_employee
+    resource: r002_leave_request
+  input:
+    actions:
+    - create
+    principals:
+    - p002_role_employee
+    resources:
+    - r002_leave_request
+  name: impact-002 CONDITION_ADDED leave_request/create as employee

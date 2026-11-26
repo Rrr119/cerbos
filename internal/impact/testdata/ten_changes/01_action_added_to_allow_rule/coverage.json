@@ -1,0 +1,16 @@
+{
+  "branchCount": 1,
+  "coveredCount": 1,
+  "complete": true,
+  "percent": 100,
+  "branches": [
+    {
+      "branchId": "ACTION_ADDED|resourcePolicy:contact:default:|user-access|role:user|contact|create||ADDED",
+      "kind": "ACTION_ADDED",
+      "covered": true,
+      "cases": [
+        "impact-001 ACTION_ADDED contact/create as user"
+      ]
+    }
+  ]
+}

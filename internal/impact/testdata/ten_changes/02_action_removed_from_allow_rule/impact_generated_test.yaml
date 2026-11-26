@@ -1,0 +1,27 @@
+description: Auto-generated impact tests covering every branch of the policy diff.
+name: Impact_02_action_removed_from_allow_rule
+principals:
+  p001_role_editor:
+    id: p001_role_editor
+    roles:
+    - editor
+resources:
+  r001_document:
+    id: impact-resource-001
+    kind: document
+tests:
+- description: branch=ACTION_REMOVED|resourcePolicy:document:default:|editor-access|role:editor|document|delete||REMOVED
+    effects=EFFECT_ALLOW -> none
+  expected:
+  - actions:
+      delete: EFFECT_DENY
+    principal: p001_role_editor
+    resource: r001_document
+  input:
+    actions:
+    - delete
+    principals:
+    - p001_role_editor
+    resources:
+    - r001_document
+  name: impact-001 ACTION_REMOVED document/delete as editor

@@ -1,0 +1,16 @@
+{
+  "branchCount": 1,
+  "coveredCount": 1,
+  "complete": true,
+  "percent": 100,
+  "branches": [
+    {
+      "branchId": "ACTION_ADDED|principalPolicy:alice:default:|alice-export|principal:alice|report|export||ADDED",
+      "kind": "ACTION_ADDED",
+      "covered": true,
+      "cases": [
+        "impact-001 ACTION_ADDED report/export as alice"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "branchCount": 1,
+  "coveredCount": 1,
+  "complete": true,
+  "percent": 100,
+  "branches": [
+    {
+      "branchId": "ROLE_REMOVED|resourcePolicy:document:default:|read-document|role:viewer|document|read||REMOVED",
+      "kind": "ROLE_REMOVED",
+      "covered": true,
+      "cases": [
+        "impact-001 ROLE_REMOVED document/read as viewer"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+name: 06_condition_added
+manual_derivation: the unconditional employee create rule becomes conditional on status==draft. The cell employee/leave_request/create is impacted and splits into match/no_match branches.
+affected_principals:
+- role:employee
+affected_resources:
+- leave_request
+affected_actions:
+- create
+impact_set:
+- principal: role:employee
+  resource: leave_request
+  action: create
+expected_branch_kinds:
+- CONDITION_ADDED
+- CONDITION_ADDED

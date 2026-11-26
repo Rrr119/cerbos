@@ -1,0 +1,19 @@
+name: 10_derived_role_parent_added_propagates
+manual_derivation: the project_admin derived role gains owner as a parent role. The resource policy importing team_roles and using project_admin on project/update is affected at the derived-role selector level, and owner/project/update is the newly granted concrete role cell.
+affected_principals:
+- derived_role:project_admin
+- role:owner
+affected_resources:
+- project
+affected_actions:
+- update
+impact_set:
+- principal: derived_role:project_admin
+  resource: project
+  action: update
+- principal: role:owner
+  resource: project
+  action: update
+expected_branch_kinds:
+- DERIVED_ROLE_DEFINITION_CHANGED
+- DERIVED_ROLE_PARENT_ADDED

@@ -1,0 +1,3 @@
+type:feature
+Add policy-change impact analysis and test generation (`cerbosctl impact`)
+The new `internal/impact` package and `cerbosctl impact analyze|gen-tests` commands compare two policy revisions, list the affected principal/resource/action decision cells (including principal-policy IDs and derived-role propagation), and generate a Cerbos-compatible test suite that covers every diff branch. Ten hand-derived change groups are encoded as acceptance scenarios; all generated suites pass the real `cerbos verify`/`cerbos compile` engine.

@@ -1,0 +1,11 @@
+---
+apiVersion: api.cerbos.dev/v1
+principalPolicy:
+  principal: alice
+  version: default
+  rules:
+    - resource: report
+      actions:
+        - name: alice-view
+          action: view
+          effect: EFFECT_ALLOW

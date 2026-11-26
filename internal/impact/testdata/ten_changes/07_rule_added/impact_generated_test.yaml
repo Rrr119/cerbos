@@ -1,0 +1,27 @@
+description: Auto-generated impact tests covering every branch of the policy diff.
+name: Impact_07_rule_added
+principals:
+  p001_role_viewer:
+    id: p001_role_viewer
+    roles:
+    - viewer
+resources:
+  r001_blog:
+    id: impact-resource-001
+    kind: blog
+tests:
+- description: branch=RULE_ADDED|resourcePolicy:blog:default:|viewer-comment|role:viewer|blog|comment||ADDED
+    effects=none -> EFFECT_ALLOW
+  expected:
+  - actions:
+      comment: EFFECT_ALLOW
+    principal: p001_role_viewer
+    resource: r001_blog
+  input:
+    actions:
+    - comment
+    principals:
+    - p001_role_viewer
+    resources:
+    - r001_blog
+  name: impact-001 RULE_ADDED blog/comment as viewer

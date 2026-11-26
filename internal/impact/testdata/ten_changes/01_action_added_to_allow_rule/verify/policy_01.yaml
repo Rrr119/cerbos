@@ -1,0 +1,10 @@
+---
+apiVersion: api.cerbos.dev/v1
+resourcePolicy:
+  version: default
+  resource: contact
+  rules:
+    - name: user-access
+      actions: ["read", "create"]
+      effect: EFFECT_ALLOW
+      roles: ["user"]

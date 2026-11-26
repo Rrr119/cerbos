@@ -1,0 +1,10 @@
+---
+apiVersion: api.cerbos.dev/v1
+resourcePolicy:
+  version: default
+  resource: report
+  rules:
+    - name: view-report
+      actions: ["view"]
+      effect: EFFECT_ALLOW
+      roles: ["auditor", "manager"]

@@ -1,0 +1,14 @@
+---
+apiVersion: api.cerbos.dev/v1
+resourcePolicy:
+  version: default
+  resource: blog
+  rules:
+    - name: reader-read
+      actions: ["read"]
+      effect: EFFECT_ALLOW
+      roles: ["reader"]
+    - name: viewer-comment
+      actions: ["comment"]
+      effect: EFFECT_ALLOW
+      roles: ["viewer"]

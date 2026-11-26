@@ -1,0 +1,14 @@
+name: 04_role_added_to_rule
+manual_derivation: manager is added to the auditor view rule; manager/report/view becomes allowed. auditor/report/view is unchanged.
+affected_principals:
+- role:manager
+affected_resources:
+- report
+affected_actions:
+- view
+impact_set:
+- principal: role:manager
+  resource: report
+  action: view
+expected_branch_kinds:
+- ROLE_ADDED

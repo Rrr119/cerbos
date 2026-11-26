@@ -1,0 +1,14 @@
+name: 05_role_removed_from_rule
+manual_derivation: viewer is dropped from the document read rule; viewer/document/read loses access. editor is unchanged.
+affected_principals:
+- role:viewer
+affected_resources:
+- document
+affected_actions:
+- read
+impact_set:
+- principal: role:viewer
+  resource: document
+  action: read
+expected_branch_kinds:
+- ROLE_REMOVED

@@ -1,0 +1,10 @@
+---
+apiVersion: api.cerbos.dev/v1
+resourcePolicy:
+  version: default
+  resource: document
+  rules:
+    - name: editor-access
+      actions: ["read", "write"]
+      effect: EFFECT_ALLOW
+      roles: ["editor"]

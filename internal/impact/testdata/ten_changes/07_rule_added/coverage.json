@@ -1,0 +1,16 @@
+{
+  "branchCount": 1,
+  "coveredCount": 1,
+  "complete": true,
+  "percent": 100,
+  "branches": [
+    {
+      "branchId": "RULE_ADDED|resourcePolicy:blog:default:|viewer-comment|role:viewer|blog|comment||ADDED",
+      "kind": "RULE_ADDED",
+      "covered": true,
+      "cases": [
+        "impact-001 RULE_ADDED blog/comment as viewer"
+      ]
+    }
+  ]
+}

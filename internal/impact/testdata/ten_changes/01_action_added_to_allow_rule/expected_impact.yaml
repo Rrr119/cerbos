@@ -1,0 +1,14 @@
+name: 01_action_added_to_allow_rule
+manual_derivation: create is newly added to the user rule on contact; user/contact/create flips DENY->ALLOW. read is unchanged.
+affected_principals:
+- role:user
+affected_resources:
+- contact
+affected_actions:
+- create
+impact_set:
+- principal: role:user
+  resource: contact
+  action: create
+expected_branch_kinds:
+- ACTION_ADDED

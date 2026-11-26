@@ -1,0 +1,14 @@
+name: 08_rule_removed
+manual_derivation: the contractor download ALLOW rule is deleted; contractor/file/download falls through to default deny. The unchanged admin rule produces no impact.
+affected_principals:
+- role:contractor
+affected_resources:
+- file
+affected_actions:
+- download
+impact_set:
+- principal: role:contractor
+  resource: file
+  action: download
+expected_branch_kinds:
+- RULE_REMOVED

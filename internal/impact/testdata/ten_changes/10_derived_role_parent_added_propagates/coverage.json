@@ -1,0 +1,24 @@
+{
+  "branchCount": 2,
+  "coveredCount": 2,
+  "complete": true,
+  "percent": 100,
+  "branches": [
+    {
+      "branchId": "DERIVED_ROLE_DEFINITION_CHANGED|resourcePolicy:project:default:|project_admin|derived_role:project_admin|project|update||MODIFIED",
+      "kind": "DERIVED_ROLE_DEFINITION_CHANGED",
+      "covered": true,
+      "cases": [
+        "impact-001 DERIVED_ROLE_DEFINITION_CHANGED project/update as project_admin"
+      ]
+    },
+    {
+      "branchId": "DERIVED_ROLE_PARENT_ADDED|resourcePolicy:project:default:|project_admin|role:owner|project|update||ADDED",
+      "kind": "DERIVED_ROLE_PARENT_ADDED",
+      "covered": true,
+      "cases": [
+        "impact-002 DERIVED_ROLE_PARENT_ADDED project/update as owner"
+      ]
+    }
+  ]
+}

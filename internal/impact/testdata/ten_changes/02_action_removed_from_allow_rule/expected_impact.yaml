@@ -1,0 +1,14 @@
+name: 02_action_removed_from_allow_rule
+manual_derivation: delete is removed from the editor rule on document; editor/document/delete flips ALLOW->DENY.
+affected_principals:
+- role:editor
+affected_resources:
+- document
+affected_actions:
+- delete
+impact_set:
+- principal: role:editor
+  resource: document
+  action: delete
+expected_branch_kinds:
+- ACTION_REMOVED
